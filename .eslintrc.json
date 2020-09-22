@@ -20,6 +20,16 @@
   ],
   "rules": {
     "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exahustive-deps": "warn",
+    "react/js-filename-extension": [1, { "extension": [".tsx"]}],
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
