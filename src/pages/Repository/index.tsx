@@ -1,8 +1,16 @@
 /* eslint-disable no-use-before-define */
 import React from 'react';
+import { useRouteMatch } from "react-router-dom"
+
+interface RepositoryParams {
+  repository: string;
+}
 
 const Repository: React.FC = () => {
-  return <h1>hello Repository</h1>;
+
+  const { params } = useRouteMatch<RepositoryParams>()
+
+  return <h1>hello Repository: {params.repository}</h1>;
 };
 
 export default Repository;
