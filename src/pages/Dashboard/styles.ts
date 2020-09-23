@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components"
-import { shade } from "polished"
+import { shade } from "polished";
+import styled, { css } from "styled-components";
 
 interface FormProps {
   hasError: boolean;
